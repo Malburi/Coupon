@@ -1,6 +1,6 @@
-﻿namespace Coupon
+﻿namespace WindowsFormsApp1
 {
-    partial class Coupon
+    partial class CouponNotion
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,59 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_coupon = new System.Windows.Forms.TextBox();
-            this.lbl_path = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "쿠폰";
+            // 
+            // txt_coupon
+            // 
+            this.txt_coupon.Location = new System.Drawing.Point(61, 24);
+            this.txt_coupon.Name = "txt_coupon";
+            this.txt_coupon.ReadOnly = true;
+            this.txt_coupon.Size = new System.Drawing.Size(263, 21);
+            this.txt_coupon.TabIndex = 1;
+            this.txt_coupon.Text = "노션 첫줄에 입력해주세요.";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(259, 46);
+            this.button1.Location = new System.Drawing.Point(249, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "등록";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_ClickAsync);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "쿠폰";
-            // 
-            // txt_coupon
-            // 
-            this.txt_coupon.Location = new System.Drawing.Point(71, 19);
-            this.txt_coupon.Name = "txt_coupon";
-            this.txt_coupon.Size = new System.Drawing.Size(263, 21);
-            this.txt_coupon.TabIndex = 4;
-            // 
-            // lbl_path
-            // 
-            this.lbl_path.AutoSize = true;
-            this.lbl_path.Location = new System.Drawing.Point(12, 72);
-            this.lbl_path.MinimumSize = new System.Drawing.Size(20, 12);
-            this.lbl_path.Name = "lbl_path";
-            this.lbl_path.Size = new System.Drawing.Size(20, 12);
-            this.lbl_path.TabIndex = 5;
-            // 
-            // Coupon
+            // CouponNotion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 93);
-            this.Controls.Add(this.lbl_path);
+            this.ClientSize = new System.Drawing.Size(333, 100);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_coupon);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Name = "Coupon";
+            this.Name = "CouponNotion";
             this.Text = "쿠폰등록기";
-            this.Load += new System.EventHandler(this.Coupon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,11 +78,9 @@
 
         #endregion
 
-        //private DevExpress.XtraEditors.TextEdit coupon;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_coupon;
-        private System.Windows.Forms.Label lbl_path;
+        private System.Windows.Forms.Button button1;
     }
 }
 
